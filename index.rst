@@ -19,6 +19,7 @@ Simple UI – это бесплатная платформа для создан
    pro_version
    screens
    common_functions
+   python	
    offline
    arm	
    docs
