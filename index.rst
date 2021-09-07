@@ -22,6 +22,7 @@ Simple UI – это бесплатная платформа для создан
    cv
    python	
    offline
+   debug	
    no_sql
    arm	
    docs
