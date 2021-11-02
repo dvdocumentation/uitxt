@@ -20,7 +20,8 @@ Simple UI – это бесплатная платформа для создан
    screens
    common_functions
    cv
-   python	
+   python
+   suip		
    offline
    debug	
    no_sql
