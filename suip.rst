@@ -6,7 +6,7 @@
 Файлы-процессы .suip
 ======================
 
-.. image:: _static/suip_scheme.PNG
+.. image:: _static/suip_scheme.png
        :scale: 19%
        :align: center
 
