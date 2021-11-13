@@ -7,7 +7,7 @@
 ======================
 
 .. image:: _static/suip_scheme.png
-       :scale: 19%
+       :scale: 50%
        :align: center
 
 
