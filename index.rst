@@ -14,6 +14,7 @@ Simple UI – это бесплатная платформа для создан
    :caption: Содержание:
 
    intro
+   gettingstarted	
    how_it_works
    install
    pro_version
