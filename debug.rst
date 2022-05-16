@@ -105,82 +105,22 @@
 Разработка и отладка через HTTP сервис
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Идея очень простая – писать и отлаживать в IDE Python (PyCharm, Thonny, Studio Code и др.) через HTTP разработку – Flask, FastAPI и т.п. То есть исполнять python-скрипты в онлайн режиме, а потом просто перенести их на оффлайн-закладки. При этом доступны события устройства, текущий стек переменных, отладка ну и прочие средства IDE (контроль синтаксиса и т.д.)
+Идея очень простая – отлаживать локальные python-скрипты в IDE Python (PyCharm, Thonny, Studio Code и др.) через HTTP сервер– Flask. При этом доступны события устройства, текущий стек переменных, отладка ну и прочие средства IDE (контроль синтаксиса и т.д.). Т.е. обработчик Python переносится на веб сервер и отлаживается там.
 
-Порядок работы такой:
+Порядок работы начиная с релиза 9.35 такой (в папке редактора должен лежать шаблон _debug_template.py ):
 
-1.В оффлайн обработчике (пустом) нужно установить флаги, которые перенаправят запросы онлайн-обработчиков на ваш Flask-сервис
-
-
-.. code-block:: Python
-
-	hashMap.put("py_online_url","http://192.168.1.143:2075");
-	hashMap.put("py_online_user","usr");
-	hashMap.put("py_online_password","");
-	hashMap.put("py_function","test_on_start");
-
-где в первых 3-х строчках указываются параметры доступа к вашему Flask -сервису, в 4й строке указывается произвольное название функции которая будет выполняться на стороне сервера
-
-2. Пишется и запускается скрипт с Flask-сервисом шаблона, приведенного ниже. Поясню содержимое скрипта: запускается Flask сервер в режиме отладки с опубликованной командой POST /set_input/<method>, ваши скрипты (название которого указываются в обработчиках) пишутся и отлаживаются в функциях с соответствующими именами, класс hashMap имитирует аналогичный Java-класс в реальных обработчиках, остальное – парсинг и упаковка ответов в том виде, который требуется Simple UI
+1.В наименовании Python-обработчиков, которые нужно отладить временно ставится префикс "_"
 
 
-.. code-block:: Python
+.. image:: _static/debug_name.JPG
+       :scale: 80%
+       :align: center
 
+2.Вызывается пункт меню "Сгенерировать отладочный файл"
 
-	from flask import Flask
-	from flask import request
-	import json
-	app = Flask(__name__)
-	def test_on_start():
-	    #тело обработчика
-    	
-	    b = int(hashMap.get('a'))
-	    b = b+5550
-	    hashMap.put('online_a',str(b))
-	
-	def test_on_input():
-	    #тело обработчика
-    	
-	    b = hashMap.get('barcode')
-	    b+=' - это штрихкод'
-	    hashMap.put('online_barcode',str(b))    
-	
-  	
-	@app.route('/set_input/<method>', methods=['POST']) 
-	def set_input(method):
-	    func = request.args.get('function')
-	    jdata = json.loads(request.data.decode("utf-8"))
-	    f = globals()[func]
-	    hashMap.d=jdata['hashmap']
-	    f()
-	    jdata['hashmap'] = hashMap.export()
-	    jdata['stop'] =False
-	    jdata['ErrorMessage']=""
-	    jdata['Rows']=[]
-	
-	    return json.dumps(jdata)
-	
-	class hashMap:
-	    d = {}
-	    def put(key,val):
-	        hashMap.d[key]=val
-	    def get(key):
-	        return hashMap.d.get(key)
-	    def remove(key):
-	        if key in hashMap.d:
-	            hashMap.d.pop(key)
-	    def containsKey(key):
-	        return  key in hashMap.d  
-	    def export():
-	        ex_hashMap = []
-	        for key in hashMap.d.keys():
-	            ex_hashMap.append({"key":key,"value":hashMap.d[key]})
-	        return ex_hashMap     
-	
-	if __name__ == '__main__':
-	    app.run(host='0.0.0.0', port=2075,debug=True)    
+.. image:: _static/generate_debug.png
+       :scale: 80%
+       :align: center
 
-3.	Далее по событиям в приложении запускаются нужные функции, их можно проходить в отладке и довести до кондиции. Потом перенести на закладки обработчиков
-
-.. note:: Кстати, эту конструкцию можно использовать не только для отладки а например для того чтобы сделать **общий для всех устройств сервер на Python**, для исполнения онлайн, совместной работы, API к совместному хранилищу и другие применения 
-
+3.Полученный скрипт помещается в папку редактора в debug_handlers.py надо запустить его в режиме отладки и поставить точки останова
+4.В настройках приложения должен стоять Разделенный режим, произвольная авторизация, в Параметры доступа к обработчикам в URL - <адрес сервера отладки>:2075, Лимит попытки подключения надо либо увеличить либо поставить "0" (без лимита)

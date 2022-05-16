@@ -28,6 +28,7 @@ Simple UI – это бесплатная платформа для создан
    no_sql
    arm	
    docs
+   localization
    commands
    versions
    
