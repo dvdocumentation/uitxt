@@ -30,6 +30,7 @@ Simple UI – это бесплатная платформа для создан
    docs
    localization
    commands
+   settings
    versions
    
    
