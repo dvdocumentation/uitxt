@@ -25,7 +25,7 @@
 
   from ru.travelfood.simple_ui import NoSQL as noClass
 	
-2-й варинт:
+2-й вариант:
 
 .. code-block:: Python
 
