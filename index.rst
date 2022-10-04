@@ -21,6 +21,7 @@ Simple UI – это бесплатная платформа для создан
    screens
    common_functions
    cv
+   vector
    python
    suip		
    offline
