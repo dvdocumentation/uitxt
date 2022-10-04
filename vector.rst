@@ -7,7 +7,7 @@
 ========================
 
 
-.. image:: _static/vector.PNG
+.. image:: _static/vector.png
        :scale: 35%
        :align: center
 
