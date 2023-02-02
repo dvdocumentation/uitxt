@@ -111,7 +111,7 @@ Cобственно, разработка...
 
 
 
-.. image:: _static/handlers_start_1.png
+.. image:: _static/handlers_start_1.PNG
        :width: 900
        :align: center
 
