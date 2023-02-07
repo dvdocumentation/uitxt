@@ -205,7 +205,7 @@ NoSQL
 Статические ресурсы
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/mediafiles.png
+.. image:: _static/mediafiles.PNG
        :scale: 100%
        :align: center
 
