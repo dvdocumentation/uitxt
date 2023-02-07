@@ -15,18 +15,14 @@ Simple UI – это бесплатная платформа для создан
 
    intro
    gettingstarted	
-   how_it_works
-   install
-   pro_version
    screens
    common_functions
    cv
    vector
    python
    suip		
-   offline
    debug	
-   no_sql
+   storage
    arm	
    docs
    localization
