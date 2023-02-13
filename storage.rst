@@ -40,7 +40,8 @@ SQL
   hashMap.put("SQLExecMany",json.dumps({"query":"insert into goods(art,barcode,nom) values(?,?,?)","params":json.dumps(values,ensure_ascii=False)}))
 
 **SQLParameter** – имеет смысл для SQLExecMany для передачи массива записей в качестве параметра из других обработчиков
-**SQLQuery** ,{"query":"SQL statement","params":"parameters with delimiter"} – запрос типа SELECT, который пишет выборку в виде JSON-массива в стек переменных
+**SQLQuery** ,{"query":"SQL statement","params":"parameters with delimiter"} – запрос типа SELECT, который пишет выборку в виде JSON-массива в стек переменных в SQLResult
+**SQLQueryMany** ,{"query":"SQL statement","params":"parameters with delimiter"} – запрос типа SELECT, который пишет выборку в виде JSON-массива во врменный файл и в параметре SQLResultFile возвращает имя этого файла. Для очень большых выборок (>0.5 млн строк)
 
 Те же функции можно вызывать из импортируемого класса напрямую. Этот вариант хорош тем что результат получаешь сразу а не на конец шага и его лучше использовать в python-обработчиках.
 
@@ -64,7 +65,7 @@ SQL
 
 1. Передавать любые поля в запрос из стека переменных через @, также как они передаются на форму например. Например, этот запрос запишет в таблицу name и barcode. Это касается и переменных запроса и условий.
 
-.. image:: _static/sql1.JPG
+.. image:: _static/sql1.jpg
        :scale: 100%
        :align: center
 
@@ -73,7 +74,7 @@ SQL
 
 3. Но если в select написать limit 1 то обработчик запишет переменные 1й строки сразу в стек переменных. Удобно например при открытии сделать выборку, сразу получить переменные и привязать их на форму – без парсинга и т.е. 
 
-.. image:: _static/sql2.JPG
+.. image:: _static/sql2.jpg
        :scale: 100%
        :align: center
 
@@ -205,7 +206,7 @@ NoSQL
 Статические ресурсы
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/mediafiles.PNG
+.. image:: _static/mediafiles.png
        :scale: 100%
        :align: center
 
