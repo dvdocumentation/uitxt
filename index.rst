@@ -23,6 +23,7 @@ Simple UI – это бесплатная платформа для создан
    suip		
    debug	
    storage
+   sockets
    arm	
    docs
    localization
