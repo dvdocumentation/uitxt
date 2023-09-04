@@ -20,6 +20,7 @@ Simple UI – это бесплатная платформа для создан
    cv
    vector
    python
+   devices
    suip		
    debug	
    storage
