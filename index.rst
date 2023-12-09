@@ -25,6 +25,7 @@ Simple UI – это бесплатная платформа для создан
    debug	
    storage
    sockets
+   simpleweb
    arm	
    docs
    localization
