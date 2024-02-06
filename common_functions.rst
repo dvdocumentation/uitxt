@@ -53,17 +53,17 @@
   ],
   "rows": [
     {
-      "name": "Процессов Intel Core 9 OEM",
+      "nom": "Процессов Intel Core 9 OEM",
       "qty": "5",
       "price": "15500.00"
     },
     {
-      "name": "Процессов Intel Core 5 BOX",
+      "nom": "Процессов Intel Core 5 BOX",
       "qty": "-2",
       "price": "12500.00"
     },
     {
-      "name": "Процессов Intel Core 5 (OEM)",
+      "nom": "Процессов Intel Core 5 (OEM)",
       "qty": "2",
       "price": "11500.00"
     }
