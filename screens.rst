@@ -140,7 +140,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. image:: _static/listener.JPG
+.. image:: _static/listener.jpg
        :scale: 100%
        :align: center
 
@@ -215,7 +215,7 @@
 Галерея слайдер
 """"""""""""""""""""
 
-.. image:: _static/slider.PNG
+.. image:: _static/slider.png
        :scale: 35%
        :align: center
 
