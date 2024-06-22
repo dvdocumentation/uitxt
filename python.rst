@@ -102,29 +102,29 @@ Python в обработчиках
 
 Интерфейсные команды:
  
- * *toast(String toast)* – вывести сообщение Андроид 
- * *speak(String text)* – произнести текст (TTS engine)
- * *listen()* – запустить ожидание распознавания речи
- * *vibrate()* и *vibrate(int duration)* – вибрация и вибрация заданной длительности
- * *beep()/beep(int tone)/ beep(int tone,int beep_duration,int beep_volume)* – звуковой сигнал, т.ч. с возможностью выбрать тон (от 1 до 99), продолжительность и громкость (по умолчанию – 100)
+ * **toast(String toast)** – вывести сообщение Андроид 
+ * **speak(String text)** – произнести текст (TTS engine)
+ * **listen()** – запустить ожидание распознавания речи
+ * **vibrate()** и **vibrate(int duration)** – вибрация и вибрация заданной длительности
+ * **beep()/beep(int tone)/ beep(int tone,int beep_duration,int beep_volume)** – звуковой сигнал, т.ч. с возможностью выбрать тон (от 1 до 99), продолжительность и громкость (по умолчанию – 100)
 notification(String message)/ notification (String message,String title)/ notification(String message,String title,int number) – уведомление в шторке уведомлений. Number – идентификатор уведомления, по которому к нему можно потом обратиться, чтобы либо убрать, либо перезаписать (обновить)
- *notification_progress(String message,String title,int number,int progress)* – уведомление с прогресс-баром (от 0 до 100)
- *notification_cancel(int number)*  – скрыть уведомление
+ **notification_progress(String message,String title,int number,int progress)** – уведомление с прогресс-баром (от 0 до 100)
+ **notification_cancel(int number)**  – скрыть уведомление
 
 Управляющие команды:
 
- * *refresh_screen()* запускает рефреш экрана. Предполагается, что стек будет установлен рантайм методами работы со стеком
- * *refresh_screen(hashMap)* - запускает рефреш и передает стек. 
- * *RunEvent(String handlers)* – запустить массив обработчиков
- * *BackgroundCommand(command)* – запустить фоновую команду
- * *stop()* или *stop(hashMap)* – точка останова для отладки
+ * **refresh_screen()** запускает рефреш экрана. Предполагается, что стек будет установлен рантайм методами работы со стеком
+ * **refresh_screen(hashMap)** - запускает рефреш и передает стек. 
+ * **RunEvent(String handlers)** – запустить массив обработчиков
+ * **BackgroundCommand(command)** – запустить фоновую команду
+ * **stop()** или **stop(hashMap)** – точка останова для отладки
 
 Работа со стеком:
 
- * *get_process_hashmap()* – получает стек переменных экрана из любого места
- * *get_cv_hashmap()* – получает стек переменных ActiveCV из любого места
- * *get_service_hashmap()* – получает стек переменных фонового сервиса из любого места
- * *process_started()* – получает признак, запущен ли процесс в данный момент
- * *cv_started()* – получает признак, запущено ли ActiveCV в данный момент
- * *put_process_hashMap(key,value)* * помещает значение в стек процесса
- * *remove_process_hashMap(key)* – удаляет значение из стека процесса
+ * **get_process_hashmap()** – получает стек переменных экрана из любого места
+ * **get_cv_hashmap()** – получает стек переменных ActiveCV из любого места
+ * **get_service_hashmap()** – получает стек переменных фонового сервиса из любого места
+ * **process_started()** – получает признак, запущен ли процесс в данный момент
+ * **cv_started()** – получает признак, запущено ли ActiveCV в данный момент
+ * **put_process_hashMap(key,value)** помещает значение в стек процесса
+ * **remove_process_hashMap(key)** – удаляет значение из стека процесса
