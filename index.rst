@@ -24,6 +24,7 @@ Simple UI – это бесплатная платформа для создан
    suip		
    debug	
    storage
+   bus
    sync
    simpleweb
    arm	
