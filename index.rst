@@ -24,10 +24,11 @@ Simple UI – это бесплатная платформа для создан
    suip		
    debug	
    storage
-   bus
-   sync
+   files
+   sockets
    simpleweb
    arm	
+   docs
    localization
    commands
    settings
