@@ -140,7 +140,7 @@ GitHub проекта https://github.com/dvdocumentation/pelican_dbms
 
 Настройки инициализации указываются в поле Pelican инициализация (в Конфигурация)
 
-.. image:: _static/pelican_init.PNG
+.. image:: _static/pelican_init.png
        :scale: 100%
        :align: center
 
