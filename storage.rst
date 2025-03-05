@@ -73,10 +73,10 @@
 Для хранения доступны примитивные типы (JSON придется преобразовать в строку и обратно)
 
 Доступны команды: 
- * NoSQLPut(String database, String key,String value) – поместить значение в указанную БД
- * NoSQLGet(String database, String key) – получить значение
- * NoSQLDelete(String database, String key) – удалить значение
- * NoSQLGetAllKeys(String database) – получить массив ключей
+ * **NoSQLPut(String database, String key,String value)** – поместить значение в указанную БД
+ * **NoSQLGet(String database, String key)** – получить значение
+ * **NoSQLDelete(String database, String key)** – удалить значение
+ * **NoSQLGetAllKeys(String database)** – получить массив ключей
 
 Пример:
 
@@ -166,6 +166,7 @@ GitHub проекта https://github.com/dvdocumentation/pelican_dbms
  * **onPelicanInitialized** – событие, когда вся инициализаци завершена
  * **onPelicanInitError** – ошибка в процессе инициализации
 
+.. note::  По большому счету оба способа - равнозначны, но если обработчики pythonscript, то выбирать надо pelicans. Для python, pythonargs можно db инициализировать в onLaunch в runasync или runprogress - эффект будет тот же.
 
 Небольшой пример работы с библиотекой Pelican (полная версия примеров на все случаи жизни тут https://github.com/dvdocumentation/pelican_dbms/blob/main/samples_pelican_ru.py)
 
@@ -183,7 +184,7 @@ GitHub проекта https://github.com/dvdocumentation/pelican_dbms
  db = Pelican("samples_db1",path=os.path.dirname(Path(__file__).parent))
  #либо инициализация в SimpleUI через стек pelicans
  #from pelican import pelicans
- #a = pelicans[' samples_db1']
+ #db = pelicans[' samples_db1']
  
  #добавление документа без ИД
  id = db["goods"].insert({"name":"Банан"})
