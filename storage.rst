@@ -346,11 +346,12 @@ C SQLite можно работать:
 
 
   from ru.travelfood.simple_ui import SimpleSQLProvider as sqlClass
+  
   sql = sqlClass()
-    success=sql.SQLExec("insert into goods(art,barcode,nom) values(?,?,?)","111222,22000332323,Некий товар")
-    res = sql.SQLQuery("select * from goods where id=1","")
-    if success:    
-        hashMap.put("toast",res)
+  success=sql.SQLExec("insert into goods(art,barcode,nom) values(?,?,?)","111222,22000332323,Некий товар")
+  res = sql.SQLQuery("select * from goods where id=1","")
+  if success:    
+      hashMap.put("toast",res)
 
 
 Использование Pony ORM
