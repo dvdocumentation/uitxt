@@ -147,7 +147,7 @@
 
 Сохраняем, проверяем. Посканируйте штрихкоды. Они добавляются.
 
-.. image:: _static/2025_quickstart_ex2_7.png
+.. image:: _static/_static/2025_quickstart_2_7.png
        :scale: 75%
        :align: center
 
