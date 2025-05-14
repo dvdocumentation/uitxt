@@ -17,19 +17,19 @@
 
 Это выглядит так в конструкторе и на форме
 
-.. image:: _static/2025_screen_1.PNG
+.. image:: _static/2025_screen_1.png
        :scale: 65%
        :align: center
 
 Но можно определить значение как @btn_caption, предварительно записав в переменную btn_caption значение «Записать Документ №1»
 
-.. image:: _static/2025_screen_3.PNG
+.. image:: _static/2025_screen_3.png
        :scale: 75%
        :align: center
 
 Тогда при отрисовке, будет так
 
-.. image:: _static/2025_screen_4.PNG
+.. image:: _static/2025_screen_4.png
        :scale: 70%
        :align: center
 
@@ -155,13 +155,13 @@
 
 Например, еcли два элемента должны делить ширину пополам, то у обоих должен быть вес 1, если один должен быть в два раза шире то у него должен быть вес 2, а у другого – 1. Т.е. вес это пропорция или вес элемента в рамках контейнера по оси.
 
-.. image:: _static/2025_screen_5.PNG
+.. image:: _static/2025_screen_5.png
        :scale: 75%
        :align: center
 
 Еще один вариант часто встречающейся разметки: *нужно растянуть элемент, но оставить место для элементов сверху и снизу. Например, у вас сверху несколько элементов, а снизу вы хотите разместить блок кнопок. Между ними пространство может быть пустое, либо занято списком, как вариант.* 
 
-.. image:: _static/2025_screen_6.PNG
+.. image:: _static/2025_screen_6.png
        :scale: 75%
        :align: center
 
@@ -176,7 +176,7 @@
 Раздел конфигурации Контейнеры
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/2025_screen_7.PNG
+.. image:: _static/2025_screen_7.png
        :scale: 70%
        :align: center
 
@@ -275,7 +275,7 @@ Html-строки
 
 Все надписи, практических всех элементов (не только непосредственно элементы Надпись, но и прочие элементы, например текст в таблицах) можно размечать HTML-тегами. Это мощный и простой способ оживить интерфейс без усложнения лишними контейнерами, фоновыми цветами и т.д., Например можно выделить часть строки так. Это простой текст, а это <b>жирный</b>
 
-.. image:: _static/2025_screen_8.PNG
+.. image:: _static/2025_screen_8.png
        :scale: 55%
        :align: center
 
@@ -315,7 +315,7 @@ Html-строки
 Awesome-иконки
 -------------------
 
-.. image:: _static/2025_screen_9.PNG
+.. image:: _static/2025_screen_9.png
        :scale: 55%
        :align: center
 
@@ -330,7 +330,7 @@ Awesome-иконки
 
 Все поля ввода (кроме современного поля ввода) можно разместить вместе с заголовком в упрощённом виде. Как это было бы в стандартном исполнении? Для этого надо сделать горизонтальный контейнер и разместить в нет два элемента – Надпись (заголовок поля) и поле ввода с весами у обоих =1. Тогда мы получим поле с заголовком. Это же действие можно выполнить, если разместить просто поле ввода: 
 
-.. image:: _static/2025_screen_10.PNG
+.. image:: _static/2025_screen_10.png
        :scale: 90%
        :align: center
 
@@ -356,7 +356,7 @@ Awesome-иконки
 Современное поле ввода
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/2025_screen_11.PNG
+.. image:: _static/2025_screen_11.png
        :scale: 55%
        :align: center
 
@@ -411,7 +411,7 @@ Awesome-иконки
 DatePicker, NumberPicher, TimePicker 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/2025_screen_12.PNG
+.. image:: _static/2025_screen_12.png
        :scale: 55%
        :align: center
 
@@ -441,7 +441,7 @@ DatePicker, NumberPicher, TimePicker
 Индикатор(Gauge) 
 ~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/2025_screen_14.PNG
+.. image:: _static/2025_screen_14.png
        :scale: 55%
        :align: center
 
@@ -459,7 +459,7 @@ DatePicker, NumberPicher, TimePicker
 Диаграммы. Линейная (Line), Столбчатая (Bar) и Круговая(Pie) вывод диаграмм в контейнер
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/2025_screen_15.PNG
+.. image:: _static/2025_screen_15.png
        :scale: 55%
        :align: center
 
@@ -490,13 +490,13 @@ DatePicker, NumberPicher, TimePicker
 
 Таблица не имеет границ строк по умолчанию, их надо задавать в контейнере если требуется. Тоже самое с чересстрочной разметкой. 
 
-.. image:: _static/2025_screen_17.PNG
+.. image:: _static/2025_screen_17.png
        :scale: 75%
        :align: center
 
 В Списке карточек элементы оформлены в виде карточек
 
-.. image:: _static/2025_screen_16.PNG
+.. image:: _static/2025_screen_16.png
        :scale: 100%
        :align: center
 
@@ -603,7 +603,7 @@ DatePicker, NumberPicher, TimePicker
 """"""""""""""""""""""""""""""""""""""""""""
 
 
-.. image:: _static/2025_screen_18.PNG
+.. image:: _static/2025_screen_18.png
        :scale: 90%
        :align: center
 
@@ -621,7 +621,7 @@ DatePicker, NumberPicher, TimePicker
 Горизонтальные списки
 """"""""""""""""""""""""
 
-.. image:: _static/2025_screen_19.PNG
+.. image:: _static/2025_screen_19.png
        :scale: 75%
        :align: center
 
@@ -655,7 +655,7 @@ DatePicker, NumberPicher, TimePicker
 ~~~~~~~~~~~~~~~~~~
 
 
-.. image:: _static/2025_screen_20.PNG
+.. image:: _static/2025_screen_20.png
        :scale: 75%
        :align: center
 
@@ -687,7 +687,7 @@ DatePicker, NumberPicher, TimePicker
  * hint - подсказка
  
 
-.. image:: _static/2025_screen_22.PNG
+.. image:: _static/2025_screen_22.png
        :scale: 75%
        :align: center
 
@@ -719,7 +719,7 @@ DatePicker, NumberPicher, TimePicker
 Тогда, при открытии, увидим результат:
  
 
-.. image:: _static/2025_screen_21.PNG
+.. image:: _static/2025_screen_21.png
        :scale: 55%
        :align: center
 
@@ -729,7 +729,7 @@ DatePicker, NumberPicher, TimePicker
 ActiveCV
 ~~~~~~~~~~~
 
-.. image:: _static/2025_screen_23.PNG
+.. image:: _static/2025_screen_23.png
        :scale: 55%
        :align: center
 
@@ -745,7 +745,7 @@ HTML-поле
 ~~~~~~~~~~~~~
 
 
-.. image:: _static/2025_screen_24.PNG
+.. image:: _static/2025_screen_24.png
        :scale: 55%
        :align: center
 
