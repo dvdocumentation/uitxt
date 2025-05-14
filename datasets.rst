@@ -51,7 +51,7 @@
  hashMap.put("table",json_to_str(j))
  
 
-.. image:: _static/2025_dataset_4.PNG
+.. image:: _static/2025_dataset_4.png
        :scale: 55%
        :align: center
 
@@ -67,7 +67,7 @@
   }
  
 
-.. image:: _static/2025_dataset_5.PNG
+.. image:: _static/2025_dataset_5.png
        :scale: 55%
        :align: center
 
@@ -145,7 +145,7 @@
 Можно использовать конструкцию с | чтобы разместить поле с заголовком
 
 
-.. image:: _static/2025_dataset_1.PNG
+.. image:: _static/2025_dataset_1.png
        :scale: 55%
        :align: center
 
@@ -162,7 +162,7 @@
 Примеры различной настройки полей датасетов:
 
 
-.. image:: _static/2025_dataset_2.PNG
+.. image:: _static/2025_dataset_2.png
        :scale: 55%
        :align: center
 
@@ -194,7 +194,7 @@
 Тогда, при открытии, увидим результат:
  
 
-.. image:: _static/2025_dataset_3.PNG
+.. image:: _static/2025_dataset_3.png
        :scale: 55%
        :align: center
 
@@ -203,7 +203,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. image:: _static/2025_dataset_6.PNG
+.. image:: _static/2025_dataset_6.png
        :scale: 55%
        :align: center
 
@@ -217,7 +217,7 @@
 Для этого нужно в значении указать переменную, в которой будет находиться ссылка на запись (универсальная ссылка), а в переменную надо поместить имя поля записи.
 
 
-.. image:: _static/2025_dataset_7.PNG
+.. image:: _static/2025_dataset_7.png
        :scale: 55%
        :align: center
 
