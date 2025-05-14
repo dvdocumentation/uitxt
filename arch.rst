@@ -445,6 +445,7 @@
 Сделать SUIP файл можно **скомпоновав JSON по определенному формату**:
 
 .. code-block:: JSON
+
  {
  "SimpleUIProcess": {
  "type": "Process",
