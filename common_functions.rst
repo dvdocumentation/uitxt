@@ -9,7 +9,7 @@
 Диалоги
 ---------------
 
-.. image:: _static/2025_common_1.PNG
+.. image:: _static/2025_common_1.png
        :scale: 75%
        :align: center
 
@@ -37,7 +37,7 @@
 --------------------------------
 
 
-.. image:: _static/2025_common_2.PNG
+.. image:: _static/2025_common_2.png
        :scale: 75%
        :align: center
 
@@ -78,7 +78,7 @@ Base64 не очень рекомендуемый способ, так как к
 Горизонтальная галерея мультимедиа
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/2025_common_3.PNG
+.. image:: _static/2025_common_3.png
        :scale: 75%
        :align: center
 
@@ -88,7 +88,7 @@ Base64 не очень рекомендуемый способ, так как к
 Галерея слайдер
 ~~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/2025_common_4.PNG
+.. image:: _static/2025_common_4.png
        :scale: 55%
        :align: center
 
@@ -100,7 +100,7 @@ Base64 не очень рекомендуемый способ, так как к
 --------------------------------
 
 
-.. image:: _static/2025_common_5.PNG
+.. image:: _static/2025_common_5.png
        :scale: 100%
        :align: center
 
@@ -189,7 +189,7 @@ PrintPreview, подготовка макетов для печати
 ------------------------------------------------
 
 
-.. image:: _static/2025_common_6.PNG
+.. image:: _static/2025_common_6.png
        :align: center
 
 
