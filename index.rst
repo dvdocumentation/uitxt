@@ -33,7 +33,6 @@
    localization
    settings   
    simpleweb
-   coming_soon
    
 
 
