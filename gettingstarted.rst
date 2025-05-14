@@ -14,7 +14,7 @@
 Развертывание
 ~~~~~~~~~~~~~~~~~
 
-.. image:: _static/starting_page.PNG
+.. image:: _static/starting_page.png
        :scale: 55%
        :align: center
 
@@ -33,7 +33,7 @@
 
 Добавим несколько элементов – надписи, поле ввода и кнопку. У всех ставим ширину – на весь контейнер. У надписей мы определяем Значение, у полей ввода – переменные, в котрые будут попадать введенные значения. У кнопки в Значение пишем надпись кнопки, а в переменную - некую переменную, по которой обработчик будет понимать, что нажата именно эта кнопка.
 
-.. image:: _static/container_content.PNG
+.. image:: _static/container_content.png
        :scale: 55%
        :align: center
 
@@ -56,7 +56,7 @@
  * Действие = **run** (что означает синхронное выполнение)
  * Тип обработчика **pythonscript** (что означает, что можно писать тест прямо в редакторе)
 
-.. image:: _static/2025_quick_start_ex1.PNG
+.. image:: _static/2025_quick_start_ex1.png
        :scale: 80%
        :align: center
 
@@ -87,25 +87,25 @@
  datasrv = CreateDataSet("barcodes")
 
 
-.. image:: _static/2025_quick_start_ex2_1.PNG
+.. image:: _static/2025_quick_start_ex2_1.png
        :scale: 70%
        :align: center
 
 
 **Шаг 3.** Зайдем в процесс (можно переименовать Процесс и экран как вам нравится). В экране добавим элемент Штрихкод, с переменной barcode
 
-.. image:: _static/2025_quick_start_ex2_2.PNG
+.. image:: _static/2025_quick_start_ex2_2.png
        :align: center
 
 Также создадим корневой контейнер, а в нем разместим только один элемент Список карточек со значением @cards (через **@** указывается что значение должно быть взято из стека переменных)
 
-.. image:: _static/2025_quick_start_ex2_3.PNG
+.. image:: _static/2025_quick_start_ex2_3.png
        :scale: 70%
        :align: center
 
 Также отключим прокрутку корневого контейнера (у списка своя прокрутка) и отключим панель нижних кнопок
 
-.. image:: _static/2025_quick_start_ex2_4.PNG
+.. image:: _static/2025_quick_start_ex2_4.png
        :scale: 80%
        :align: center
 
@@ -128,7 +128,7 @@
 
 Далее нам нужно этот словарь преобразовать в JSON и упаковать в переменную. Делается это функцией **json_to_str** (обертка для json.dumps(,ensure_ascii=False))
 
-.. image:: _static/2025_quick_start_ex2_5.PNG
+.. image:: _static/2025_quick_start_ex2_5.png
        :scale: 80%
        :align: center
 
@@ -147,7 +147,7 @@
 
 Сохраняем, проверяем. Посканируйте штрихкоды. Они добавляются.
 
-.. image:: _static/2025_quickstart_ex2_7.PNG
+.. image:: _static/2025_quickstart_ex2_7.png
        :scale: 75%
        :align: center
 
@@ -179,7 +179,7 @@
  ds= GetDataSet("barcodes")
  ds.save()
 
-.. image:: _static/2025_quick_start_ex2_6.PNG
+.. image:: _static/2025_quick_start_ex2_6.png
        :scale: 80%
        :align: center
 
