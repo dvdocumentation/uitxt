@@ -15,7 +15,8 @@
    :maxdepth: 1
    :caption: Содержание:
 
-   gettingstarted	
+   gettingstarted
+   vibecoding
    arch
    screens
    common_functions
