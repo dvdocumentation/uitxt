@@ -16,7 +16,7 @@
    :caption: Содержание:
 
    gettingstarted
-   vibecoding
+   simple_transition	
    arch
    screens
    common_functions
@@ -34,6 +34,7 @@
    localization
    settings   
    simpleweb
+   coming_soon
    
 
 
